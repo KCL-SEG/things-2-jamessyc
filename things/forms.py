@@ -10,7 +10,3 @@ class ThingForm(forms.ModelForm):
         model = Thing
         fields = ['name', 'description', 'quantity']
         widgets = { 'descrption': forms.Textarea(), "quantity": forms.NumberInput()}
-
-    def clean(self):
-        super.clean()
-        
